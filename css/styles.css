@@ -1,30 +1,58 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #fff;
+}
 body {
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
 }
-.logo {
-}
+
 ul {
   list-style: none;
 }
 
-/* Site nav */
-
-.site-nav .link {
-  color: #212121;
+/* Шапка */
+.logo {
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
+/* Навигация */
+
+.site-nav .site-link {
+  color: var(--secondary-text-color);
+}
+
+.site-nav .site-link:hover,
+.site-nav .site-link:focus {
+  color: var(--accent-color);
 }
 
 /* Contact */
 
-.contact .link {
-  color: #757575;
+.contact .contact-link {
+  color: var(--primary-text-color);
 }
-.contact .link:hover,
-.contact .link:focus {
-  color: #2196f3;
+.contact .contact-link:hover,
+.contact .contact-link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero-title {
+  color: var(--primary-bg-color);
+}
+
+/* Section */
+
+.section-title {
+  color: var(--secondary-text-color);
+}
+.subtitle {
+  color: var(--secondary-text-color);
+}
+/* Button */
+.button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
 }
