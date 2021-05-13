@@ -27,6 +27,9 @@ ul {
 .site-nav .site-link:focus {
   color: var(--accent-color);
 }
+.site-nav .current {
+  color: var(--accent-color);
+}
 
 /* Contact */
 
@@ -45,7 +48,7 @@ ul {
 
 /* Section */
 
-.section-title {
+.section .section-title {
   color: var(--secondary-text-color);
 }
 .subtitle {
