@@ -5,8 +5,8 @@
   --primary-bg-color: #fff;
   --color-studio: #000;
   --our-team-bg-color: #f5f4fa;
-  --footer-contact-tel: rgba(255, 255, 255, 0.6);
-  --footer-contact-mail: #c4c4c4;
+  --footer-contact-link: rgba(255, 255, 255, 0.6);
+  --primary-second-bg-color: #2f303a;
 }
 body {
   background-color: var(--primary-bg-color);
@@ -106,6 +106,7 @@ ul {
 /* Чем мы занимаемся */
 
 /* Наша команда  */
+
 .our-team-bg-color {
   background: var(--our-team-bg-color);
 }
@@ -121,6 +122,7 @@ ul {
 }
 
 /* Подвал */
+
 .footer-address {
   font-size: 14px;
   line-height: 1.71;
@@ -128,7 +130,7 @@ ul {
 }
 
 .footer-link {
-  color: var(--footer-contact-mail);
+  color: var(--footer-contact-link);
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
@@ -138,21 +140,58 @@ ul {
   color: var(--accent-color);
 }
 
-/* Кнопки */
+/* Кнопка */
 
 .button {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.primacy-second-bg-color {
+  background-color: var(--primary-second-bg-color);
 }
 
 /* Портфолио */
 
-.portfolio-nav .current {
-  color: var(--accent-color);
+/* Фильтры и Проекты */
+
+.filters-title {
+  display: none;
+}
+
+.portfolio-subtitle {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Кнопки */
+
+.portfolio-buttons {
+  color: var(--secondary-text-color);
+  background-color: var(--our-team-bg-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+}
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
 }
